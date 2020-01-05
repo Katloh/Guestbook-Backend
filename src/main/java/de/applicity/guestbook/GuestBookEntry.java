@@ -8,11 +8,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Date;
 
-@Entity // Eine Entität, die in der Datenbank gespeichert wird verfügt stets über die Entity-Annotation aus dem javax.persistence-Package
+@Entity
 public class GuestBookEntry {
 
-    @Id //Primärschlüssel
-    @GeneratedValue(strategy = GenerationType.AUTO) //über die Generierungsstrategie erhält die Komponente ihren Wert, AUTO = es wird der für die Datenbank best geeignete Ansatz gewählt
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String title;
